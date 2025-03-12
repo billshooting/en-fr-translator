@@ -1,0 +1,1 @@
+Folder for store training data and test data locally.
