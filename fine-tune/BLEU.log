@@ -1,0 +1,25 @@
+Evaluating: 100%|████████████████████████████████████████████████████████████████████████████████████████| 3003/3003 [1:29:34<00:00,  1.79s/it]
+
+Final BLEU Score: 11.95
+Details: {'score': 11.946849841810884, 'counts': [30859, 12087, 5654, 2699], 'totals': [76922, 73919, 70919, 67921], 'precisions': [40.117261641662985, 16.351682246783643, 7.972475641224496, 3.973734191192709], 'bp': 0.9950203697833967, 'sys_len': 76922, 'ref_len': 77306}
+
+Sample Predictions:
+Source: Spectacular Wingsuit Jump Over Bogota
+Reference: Spectaculaire saut en "wingsuit" au-dessus de Bogota
+Predicted: Spectacular Wingsuit Jump Over Bogota
+
+Source: Sportsman Jhonathan Florez jumped from a helicopter above Bogota, the capital of Colombia, on Thursday.
+Reference: Le sportif Jhonathan Florez a sauté jeudi d'un hélicoptère au-dessus de Bogota, la capitale colombienne.
+Predicted: Le Sportsman Jhonathan Florez a joué de l'aéroport de Bogota, le capitaine de Colombie, le 13 janvier.
+
+Source: Wearing a wingsuit, he flew past over the famous Monserrate Sanctuary at 160km/h. The sanctuary is located at an altitude of over 3000 meters and numerous spectators had gathered there to watch his exploit.
+Reference: Equipé d'un wingsuit (une combinaison munie d'ailes), il est passé à 160 km/h au-dessus du célèbre sanctuaire Monserrate, situé à plus de 3 000 mètres d'altitude, où de nombreux badauds s'étaient rassemblés pour observer son exploit.
+Predicted: Wearing un avion de wingsuit, il avait près d'échapper sur la Santé Monserrate à 160km/h. La Santé Monserrate est située à une altitude de plus de 3000 mètres et de nombreux joueurs ont été près d'échapper sa exploit.
+
+Source: A black box in your car?
+Reference: Une boîte noire dans votre voiture ?
+Predicted: Un box blanc dans sa voiture?
+
+Source: As America's road planners struggle to find the cash to mend a crumbling highway system, many are beginning to see a solution in a little black box that fits neatly by the dashboard of your car.
+Reference: Alors que les planificateurs du réseau routier des États-Unis ont du mal à trouver l'argent nécessaire pour réparer l'infrastructure autoroutière en décrépitude, nombreux sont ceux qui entrevoient une solution sous forme d'une petite boîte noire qui se fixe au-dessus du tableau de bord de votre voiture.
+Predicted: En tant que les planifs de l'américaine s'est contribué d'un système de véhicule, de nombreuses ont commencé à se rendre une solution dans un box qui fit complètement par l'automne de sa voiture.

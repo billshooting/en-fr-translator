@@ -1,0 +1,36 @@
+FROM ./translator.f16.gguf  
+
+# 基础参数配置
+PARAMETER temperature 0.7  
+PARAMETER num_ctx 2048     
+PARAMETER num_predict 128 
+PARAMETER repeat_penalty 1.2 
+PARAMETER top_k 40        
+
+# 停止标记（对应自定义token）
+PARAMETER stop "[SEP]"
+PARAMETER stop "<EOS>"
+
+# 系统提示模板（与评估脚本的输入格式对齐）
+SYSTEM """
+You are a professional English-French translator. 
+Follow this format strictly:
+Translate English to French: {source_text} [SEP]
+
+Respond ONLY with the translated text, no explanations.
+"""
+
+# 模板配置（适配对话格式）
+TEMPLATE """
+{{- if .First }}
+### Instruction:
+{{ .System }}
+
+### Input:
+Translate English to French: {{ .Prompt }} [SEP]
+
+### Response:
+{{- else }}
+{{ .Prompt }} <EOS>
+{{- end -}}
+"""

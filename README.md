@@ -16,3 +16,6 @@ For test dataset: WMT14, it has been preset in the module: dataset, we don't hav
 
 ## Benchmark
 The benchmark of this translation task is SacreBLEU.
+
+## Model File
+All of the trained models are too big to store on GitHub.
